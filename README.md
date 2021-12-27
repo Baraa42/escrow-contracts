@@ -4,7 +4,7 @@
 
 ## The Contracts
 
-The repo contain 4 main contracts. 
+The repo contain 4 main contracts in `contracts/escrow`
 
 ### Escrow.sol
 This contract implement an escrow mechanism, after deployment any user can create an escrow order. The order is appended to the Orders array. Contract has an admin to settle disputes, for each dispute a disputeFee is charged by the admin.
