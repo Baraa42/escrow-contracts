@@ -67,7 +67,7 @@ This contract implement an ERC20 token escrow mechanism, after deployment the us
 ### EscrowERC721.sol
 Similar to `ERC20.sol`.
 
-**New Params : 
+**New Params** : 
   1. `tokenContract` : ERC721 token contract address.
   2. `tokenId` : token id.
  
