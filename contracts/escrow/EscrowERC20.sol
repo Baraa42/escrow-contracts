@@ -44,7 +44,7 @@ contract EscrowERC20 is Ownable {
     event OrderResolved(uint256 buyerRefund, uint256 sellerRefund);
 
     /**
-     * @dev Throws if called by an account other than the buyer of `orders[_orderId]`
+     * @dev Throws if called by an account other than the buyer
      */
     modifier onlyBuyer() {
         require(buyer == msg.sender, 'Only Buyer Allowed');
@@ -52,14 +52,14 @@ contract EscrowERC20 is Ownable {
     }
     
     /**
-     * @dev Throws if called by an account other than the seller of `orders[_orderId]`
+     * @dev Throws if called by an account other than the seller 
      */
     modifier onlySeller() {
         require(seller == msg.sender, 'Only Seller Allowed');
         _;
     }
     /**
-     * @dev Throws if called by an account other than the buyer or seller of `orders[_orderId]`
+     * @dev Throws if called by an account other than the buyer or seller 
      */
     modifier onlyBuyerOrSeller() {
         require(seller == msg.sender || buyer == msg.sender, 'Only Buyer or Seller Allowed');
