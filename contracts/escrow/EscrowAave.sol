@@ -43,7 +43,7 @@ contract EscrowAave is Ownable  {
     event OrderResolved(bool refundBuyer);
 
     /**
-     * @dev Throws if called by an account other than the buyer of `orders[_orderId]`
+     * @dev Throws if called by an account other than the buyer 
      */
     modifier onlyBuyer( ) {
         require(buyer == msg.sender, 'Only Buyer Allowed');
@@ -51,7 +51,7 @@ contract EscrowAave is Ownable  {
     }
 
      /**
-     * @dev Throws if called by an account other than the seller of `orders[_orderId]`
+     * @dev Throws if called by an account other than the seller 
      */
     
      modifier onlySeller( ) {
@@ -59,7 +59,7 @@ contract EscrowAave is Ownable  {
         _;
     }
      /**
-     * @dev Throws if called by an account other than the buyer or seller of `orders[_orderId]`
+     * @dev Throws if called by an account other than the buyer or seller 
      */
 
     modifier onlyBuyerOrSeller() {
